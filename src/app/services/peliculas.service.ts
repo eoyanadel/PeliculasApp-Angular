@@ -20,7 +20,7 @@ export class PeliculasService {
   // tslint:disable-next-line:typedef
   get params() {
     return {
-      api_key: '6c85155ef3fdfbbb8bb03b9e0117cffc',
+      api_key: 'ENTER_HERE_YOUR_APIKEY',
       language: 'es-ES',
       page: this.carteleraPage.toString()
     };
