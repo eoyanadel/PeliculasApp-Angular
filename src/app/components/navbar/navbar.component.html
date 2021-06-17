@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">Películas</a>      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+        </ul>
+        <div class="d-flex">
+          <input class="form-control me-2" 
+                 type="search" 
+                 placeholder="Buscar película" 
+                 aria-label="Search"
+                 (keyup.enter)="buscarPelicula(txtBuscar.value)"
+                 #txtBuscar>
+          <button class="btn btn-outline-success" 
+                  type="submit"
+                  (click)="buscarPelicula(txtBuscar.value)">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </nav>
